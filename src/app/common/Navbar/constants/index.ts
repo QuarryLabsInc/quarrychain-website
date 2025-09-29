@@ -59,7 +59,7 @@ export const navbarItems: NavbarItem[] = [
       },
       {
         name: "Github subpage",
-        url: "/",
+        url: "https://github.com/QuarryLabsInc",
       },
       {
         name: "Bug Bounty",
