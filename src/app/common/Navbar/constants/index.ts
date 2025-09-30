@@ -59,7 +59,7 @@ export const navbarItems: NavbarItem[] = [
       },
       {
         name: "Github subpage",
-        url: "/",
+        url: "https://github.com/QuarryLabsInc",
       },
       {
         name: "Bug Bounty",
@@ -81,11 +81,19 @@ export const navbarItems: NavbarItem[] = [
     ],
   },
   {
-    title: "Quarry Labs Team",
+    title: "QuarryLabs Team",
     menuItems: [
       {
         name: "Alec Arrambide - CEO/ Founder",
         url: "https://www.linkedin.com/in/alec-arrambide-91a7b321a/",
+      },
+      {
+        name: "Tanner Hanks - COO",
+        url: "https://tannerhanks.com/",
+      },
+      {
+        name: "Gabby Parsons - CMO",
+        url: "https://www.instagram.com/gabbytookthese/",
       },
     ],
   },
