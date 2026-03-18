@@ -57,7 +57,7 @@ export const StyledSpan = styled(Span)`
   },
 }) => neutral[400]};
   user-select: none;
-  font-weight:800;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   display:flex;

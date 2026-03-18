@@ -11,7 +11,7 @@ export function DesktopRoadmap() {
         <RoadmapContent>
           {roadmapQuarters.map(quarter =>
             <QuarterContainer quarter={quarter.number} key={quarter.number}>
-              <Card title={quarter.title} items={quarter.items} />
+              <Card title={quarter.title} description={quarter.description} items={quarter.items} color={quarter.color}/>
               <DateFigure color={quarter.color} number={quarter.number} />
             </QuarterContainer>)}
         </RoadmapContent>

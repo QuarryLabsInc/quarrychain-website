@@ -1,28 +1,53 @@
-import { AppTheme } from '../../../../../global/theme';
+import { AppTheme } from '../../../../../global/theme'
 
 export const roadmapQuarters = [
   {
-    title: "Phase 1",
-    items: ["Development/Launch of quarrychain.network", "QuarryChain Seed Round"],
+    title: 'Phase 1',
+    description: 'Foundation & Network Launch',
+    items: [
+      'QuarryChain Seed Round',
+      'QuarryChain Testnet Development & Launch',
+      'Core Team Expansion',
+    ],
     color: AppTheme.colors.primary[0],
-    number: 1
+    number: 1,
   },
   {
-    title: "Phase 2",
-    items: ["Development of QVM (Quarry Virtual Machine)", "QRC-20 Development & Testing","Development of QuarrySwap","Development of QuarryWallet","QuarryChain Private Sale", "Expanding the Quarry Labs Team"],
-    color: AppTheme.colors.regular["darkRed"],
-    number: 2
+    title: 'Phase 2',
+    description: 'Ecosystem Infrastructure & Private Sale',
+    items: [
+      'Development of QVM (Quarry Virtual Machine)',
+      'QRC-20 Development & Testing',
+      'Development of QuarrySwap & QuarryWallet',
+      'Development of No-Code API',
+    ],
+    color: AppTheme.colors.regular['darkRed'],
+    number: 2,
   },
   {
-    title: "Phase 3",
-    items: ["QuarryChain DPoS Network Launch", "QuarryChain Public Sale","First QuarryChain Delegate Voting Round",  "QRC-20 Launch", "QuarryWallet Launch", "Development of QuarryWallet Mobile App"],
-    color: AppTheme.colors.regular["darkGreen"],
-    number: 3
+    title: 'Phase 3',
+    description: 'Network Maturation & Public Entry',
+    items: [
+      'QuarryChain Mainnet Development',
+      'QuarryChain DPoS Network Launch',
+      'Quarry (QRY) Public Sale (ICO)',
+      'First Delegate Voting Round',
+      'QRC-20 & QuarryWallet Desktop Launch',
+      'Development of QuarryWallet Mobile App',
+    ],
+    color: AppTheme.colors.regular['darkGreen'],
+    number: 3,
   },
   {
-    title: "Phase 4",
-    items: ["Further development on QuarrySwap’s Real World Marketplace", "Quarry Wallet Mobile App Launch",  "Expanding QuarryChain’s Ecosystem (DApps)"],
+    title: 'Phase 4',
+    description: 'Global Ecosystem & Marketplace',
+    items: [
+      'QuarrySwap’s Real-World Marketplace',
+      'QuarryWallet Mobile App Launch',
+      'Ecosystem Expansion (DApps)',
+      'No-Code API Global Rollout',
+    ],
     color: AppTheme.colors.secondary[100],
-    number: 4
-  }
+    number: 4,
+  },
 ]

@@ -5,7 +5,6 @@ export const NavigationListContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center	;
-  
 
   ${media.lessThan("medium")`
     display: none;

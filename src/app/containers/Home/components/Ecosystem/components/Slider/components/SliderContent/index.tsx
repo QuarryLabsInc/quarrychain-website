@@ -2,7 +2,7 @@ import {
   handleSliderContentDescription,
   handleSliderContentImage,
   handleSliderContentTitle,
-} from "../../utils";
+} from '../../utils'
 import {
   Container,
   TitleAndDescriptionContainer,
@@ -10,19 +10,22 @@ import {
   Description,
   HexagonImageContainer,
   HexagonImage,
-} from "./SliderContent.styles";
-import { SliderContentProps } from "./types";
+  Content
+} from './SliderContent.styles'
+import { SliderContentProps } from './types'
 
 export function SliderContent({ step }: SliderContentProps) {
   return (
     <Container step={step}>
-      <TitleAndDescriptionContainer>
-        <StyledTitle>{handleSliderContentTitle(step)}</StyledTitle>
-        <Description>{handleSliderContentDescription(step)}</Description>
-      </TitleAndDescriptionContainer>
-      <HexagonImageContainer>
-        <HexagonImage src={handleSliderContentImage(step)} />
-      </HexagonImageContainer>
+      <Content>
+        <TitleAndDescriptionContainer>
+          <StyledTitle>{handleSliderContentTitle(step)}</StyledTitle>
+          <Description>{handleSliderContentDescription(step)}</Description>
+        </TitleAndDescriptionContainer>
+        <HexagonImageContainer>
+          <HexagonImage src={handleSliderContentImage(step)} />
+        </HexagonImageContainer>
+      </Content>
     </Container>
-  );
+  )
 }

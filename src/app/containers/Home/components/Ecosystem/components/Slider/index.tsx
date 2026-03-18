@@ -12,7 +12,7 @@ export function Slider() {
 
   function handleControllerClick(direction: string) {
     if (direction === "right") {
-      stepNumber === 5 ? setStepNumber(1) : setStepNumber(stepNumber + 1);
+      stepNumber === 4 ? setStepNumber(1) : setStepNumber(stepNumber + 1);
     } else {
       stepNumber === 1 ? setStepNumber(5) : setStepNumber(stepNumber - 1);
     }

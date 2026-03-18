@@ -5,26 +5,15 @@ import { Container, StyledSpan, Text } from "../Footer.styles";
 
 const socialMediaLinks = [
   {
-    href: "https://t.me/+997k72ULLVtlNGI5",
+    href: "https://x.com/quarrylabsinc?s=21&t=jR0Q_ug8rBCTO32Sbir9gQ",
     icon: (
       <img
-        src={assetPaths.TELEGRAM_ICON}
+        src={assetPaths.X_ICON}
         alt="Twitter"
-        className="w-8 h-8 object-contain"
+        className="w-6 h-6 object-contain"
       />
     ),
-    alt: "Telegram",
-  },
-  {
-    href: "https://www.linkedin.com/company/quarrychain",
-    icon: (
-      <img
-        src={assetPaths.LINKEDIN_ICON}
-        alt="Twitter"
-        className="w-8 h-8 object-contain"
-      />
-    ),
-    alt: "LinkedIn",
+    alt: "Twitter",
   },
   {
     href: "https://discord.gg/7cZxWJpCyW",
@@ -32,21 +21,10 @@ const socialMediaLinks = [
       <img
         src={assetPaths.DISCORD_ICON}
         alt="Twitter"
-        className="w-8 h-8 object-contain"
+        className="w-6 h-6 object-contain"
       />
     ),
     alt: "Discord",
-  },
-  {
-    href: "https://x.com/quarrylabsinc?s=21&t=jR0Q_ug8rBCTO32Sbir9gQ",
-    icon: (
-      <img
-        src={assetPaths.X_ICON}
-        alt="Twitter"
-        className="w-8 h-8 object-contain"
-      />
-    ),
-    alt: "Twitter",
   },
   {
     href: "https://www.youtube.com/channel/UCy_08G1sh3ioVplrNQkQ_xQ/featured",
@@ -54,7 +32,7 @@ const socialMediaLinks = [
       <img
         src={assetPaths.YOUTUBE_ICON}
         alt="Twitter"
-        className="w-8 h-8 object-contain"
+        className="w-6 h-6 object-contain"
       />
     ),
     alt: "YouTube",
@@ -65,10 +43,21 @@ const socialMediaLinks = [
       <img
         src={assetPaths.REGEDIT_ICON}
         alt="Twitter"
-        className="w-8 h-8 object-contain"
+        className="w-6 h-6 object-contain"
       />
     ),
     alt: "Reddit",
+  },
+  {
+    href: "https://t.me/+997k72ULLVtlNGI5",
+    icon: (
+      <img
+        src={assetPaths.TELEGRAM_ICON}
+        alt="Twitter"
+        className="w-6 h-6 object-contain"
+      />
+    ),
+    alt: "Telegram",
   },
   {
     href: "https://www.instagram.com/quarrychain/",
@@ -76,10 +65,21 @@ const socialMediaLinks = [
       <img
         src={assetPaths.INSTAGRAM_ICON}
         alt="Twitter"
-        className="w-8 h-8 object-contain"
+        className="w-6 h-6 object-contain"
       />
     ),
     alt: "Instagram",
+  },
+  {
+    href: "https://www.linkedin.com/company/quarrychain",
+    icon: (
+      <img
+        src={assetPaths.LINKEDIN_ICON}
+        alt="Twitter"
+        className="w-6 h-6 object-contain"
+      />
+    ),
+    alt: "LinkedIn",
   },
 ];
 type TextLogoProps = {
@@ -100,7 +100,7 @@ const FooterInfo = ({ className }: TextLogoProps) => {
           </Text>
         </Container>
       </div>
-      <p className="mt-2 text-md text-gray-700 max-w-sm mx-auto md:mx-0">
+      <p className="mt-2 text-md text-gray-700 max-w-sm mx-auto md:mx-0 font-calibri">
         QuarryChain is an innovative blockchain network designed to
         revolutionize how developers create and deploy smart contracts and
         decentralized applications (DApps). Our platform offers an ecosystem of
@@ -114,7 +114,7 @@ const FooterInfo = ({ className }: TextLogoProps) => {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#1FC7D4] w-14 h-14 text-white text-xl rounded-full flex justify-center items-center"
+            className="border-[#1FC7D4] border-2 w-14 h-14 rounded-full flex justify-center items-center"
             aria-label={alt}
           >
             {icon}

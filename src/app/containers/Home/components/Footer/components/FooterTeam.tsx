@@ -2,8 +2,8 @@ import React from "react";
 
 const FooterTeam = () => {
   return (
-    <div>
-      <h3 className="text-lg mt-8 font-bold">QuarryLabs Team</h3>
+    <div className="flex flex-col justify-center">
+      <h3 className="text-lg mt-8 font-bold text-[#1FC7D4]">QuarryLabs Team</h3>
       <p className="text-sm mt-2 text-gray-700 hover:text-gray-900 block">
         <a
           href="https://www.linkedin.com/in/alec-arrambide-91a7b321a/"

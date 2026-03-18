@@ -13,6 +13,7 @@ export const Container = styled.div`
   width: 100%;
   max-width: 420px;
   position: relative;
+  border-radius: 40px; 
 
   ${media.between("large", "huge")`
     max-width: 300px;
@@ -34,6 +35,7 @@ export const Content = styled.div`
   flex-direction: column;
   padding: 22px 30px;
   box-shadow: 4px 8px 30px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 40px; 
   background ${({
   theme: {
     colors: { neutral },
@@ -55,6 +57,7 @@ export const StyledTitle = styled(Title)`
   font-size: 32px;
   line-height: 41px;
   margin-bottom: 8px;
+  text-align: center;
 
   ${media.lessThan("huge")`
     font-size: 25px;
@@ -62,8 +65,9 @@ export const StyledTitle = styled(Title)`
 `;
 
 export const StyledParagraph = styled(Paragraph)`
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
   color: ${({
   theme: {
     colors: { secondary },
@@ -75,11 +79,20 @@ export const StyledParagraph = styled(Paragraph)`
   `}
 `;
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled.div<{reverse: boolean}>`
   position: absolute;
   height: 150px;
-  bottom: -100px;
   left: 140px;
+
+  ${({ reverse }) => reverse && `
+    top: -110px;
+    bottom: unset;
+  `}
+
+  ${({ reverse }) => !reverse && `
+    bottom: -100px;
+  `}
+
   ${isSafari && `
       width: 153px;
   `}

@@ -7,32 +7,22 @@ export const Container = styled.div<{ quarter?: number }>`
   position: absolute;
   display: flex;
   align-items: center;
-  left: 150px;
+  left: 50%;
+  transform: translate(-50%, 0);
   height: auto;
 
   ${({ quarter }) => quarter && setHexagonPositionPerQuarter(quarter)}
 
   ${media.lessThan("huge")`
     top: -70px;
-    left: 310px;
   `}
-
-  @media (max-width: 1366px) {
-    left: 291px;
-  }
-
-  @media (max-width: 1280px) {
-    left: 270px;
-  }
 
   ${media.lessThan("large")`
     top: -69px; 
-    left: 112px;
   `}
 
   ${media.lessThan("medium")`
     top: -75px; 
-    left: 121px;
   `}
 `;
 
@@ -100,7 +90,13 @@ export const HexagonYearContainer = styled.div`
   margin-bottom: 5px;
 `
 
-export const HexagonQuarter = styled.div``;
+export const HexagonQuarter = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+`;
 
 export const StyledSpan = styled(Span) <{ small?: boolean }>`
   font-size: 32px;

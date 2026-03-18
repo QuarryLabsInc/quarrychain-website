@@ -14,6 +14,7 @@ export function Summary() {
               description={card.description}
               imageUrl={card.imageUrl}
               key={card.title}
+              reverse={card.reverse}
             />
           ))}
         </Cards>

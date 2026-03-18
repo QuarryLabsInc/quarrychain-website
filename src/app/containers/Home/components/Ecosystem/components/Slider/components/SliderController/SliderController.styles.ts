@@ -3,8 +3,8 @@ import media from "styled-media-query";
 import { Icon } from "../../../../../../../../common/Icon";
 
 export const Container = styled.div`
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: ${({
     theme: {
       colors: { neutral },
@@ -28,7 +28,7 @@ export const Container = styled.div`
 `;
 
 export const StyledIcon = styled(Icon)`
-  font-size: 50px !important;
+  font-size: 20px !important;
   fill: ${({
     theme: {
       colors: { neutral },

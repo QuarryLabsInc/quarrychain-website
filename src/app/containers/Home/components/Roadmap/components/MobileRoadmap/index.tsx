@@ -12,7 +12,7 @@ export function MobileRoadmap() {
       <RoadmapMobileContent>
         {roadmapQuarters.map(quarter =>
           <QuarterContainer mobile key={quarter.number}>
-            <Card title={quarter.title} items={quarter.items} />
+            <Card title={quarter.title} description={quarter.description} items={quarter.items} color={quarter.color}/>
             <DateFigure color={quarter.color} number={quarter.number} mobile />
             {quarter.number < 4 && <Lines numOfLines={4} vertical />}
           </QuarterContainer>)}

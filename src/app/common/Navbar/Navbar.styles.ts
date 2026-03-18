@@ -2,6 +2,7 @@ import styled from "styled-components";
 import media from "styled-media-query";
 
 export const NavbarContainer = styled.div`
+  position: relative;
   height: 100%;
   max-height: 80px;
   width: 100%;
@@ -15,16 +16,19 @@ export const NavbarContainer = styled.div`
     },
   }) => neutral[0]};
   position: fixed;
-  z-index: 1;
-  border: 2px solid
-    ${({
-      theme: {
-        colors: { primary },
-      },
-    }) => primary[100]};
+  z-index: 2;
 
   ${media.lessThan("medium")`
     position: static;
     padding: 15px;
   `}
+`;
+
+export const NavbarWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
 `;

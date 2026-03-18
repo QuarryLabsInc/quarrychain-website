@@ -9,10 +9,10 @@ export function Home() {
   return (
     <>
       <Introduction />
-      <Performance />
-      <Video />
-      <Ecosystem />
       <Summary />
+      <Ecosystem />
+      {/* <Performance /> */}
+      {/* <Video /> */}
       <Roadmap />
     </>
   );

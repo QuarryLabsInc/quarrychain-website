@@ -1,5 +1,6 @@
-import styled from "styled-components";
-import media from "styled-media-query";
+import styled from 'styled-components'
+import media from 'styled-media-query'
+import { AppTheme } from '../../../../../../../../global/theme'
 
 export const Container = styled.div`
   width: 15%;
@@ -8,38 +9,32 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  ${media.between("large", "huge")`
+  ${media.between('large', 'huge')`
     width: 35%;
   `}
 
-  ${media.between("medium", "large")`
+  ${media.between('medium', 'large')`
     width: 50%;
   `}
 
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     width: 65%;
   `}
-`;
+`
 
 export const StepCircle = styled.div<{ isCurrent?: boolean }>`
   width: 24px;
   height: 100%;
   border-radius: 50%;
-  background: ${({
-  theme: {
-    colors: { neutral },
-  },
-}) => neutral[200]};
+  background: ${({ theme }: { theme: typeof AppTheme }) =>
+    theme.colors.neutral[0]};
   opacity: 0.5;
   cursor: pointer;
 
-  ${({ isCurrent }) =>
+  ${({ isCurrent, theme }: { isCurrent?: boolean; theme: typeof AppTheme }) =>
     isCurrent &&
     `
   opacity: 1;
+  background: ${theme.colors.primary[0]};
   `}
-
-  :hover {
-    opacity: 0.4;
-  }
-`;
+`

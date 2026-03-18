@@ -5,13 +5,14 @@ import {
   ImageContainer,
   StyledParagraph,
   StyledTitle,
-} from "./SummaryCard.styles";
-import { SummaryCardProps } from "./types";
+} from './SummaryCard.styles'
+import { SummaryCardProps } from './types'
 
 export function SummaryCard({
   title,
   description,
   imageUrl,
+  reverse,
 }: SummaryCardProps) {
   return (
     <Container>
@@ -19,9 +20,9 @@ export function SummaryCard({
         <StyledTitle>{title}</StyledTitle>
         <StyledParagraph>{description}</StyledParagraph>
       </Content>
-      <ImageContainer>
+      <ImageContainer reverse={reverse}>
         <Image src={imageUrl} />
       </ImageContainer>
     </Container>
-  );
+  )
 }

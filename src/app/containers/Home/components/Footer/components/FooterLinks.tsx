@@ -2,8 +2,8 @@ import React from "react";
 
 const FooterLinks = () => {
   return (
-    <div className="mb-4">
-      <h3 className="text-lg font-bold mt-8">Support</h3>
+    <div className="flex flex-col justify-center">
+      <h3 className="text-lg font-bold mt-8 text-[#1FC7D4]">Support</h3>
       <a
         href="/"
         className="text-sm mt-2 text-gray-700 hover:text-gray-900 block"

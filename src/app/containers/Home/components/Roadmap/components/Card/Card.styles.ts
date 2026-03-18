@@ -36,8 +36,31 @@ export const StyledTitle = styled(Title)`
   `}
 `;
 
+export const StyledDescription = styled(Title)<{color: string}>`
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 8px;
+  color: ${({ color }) => color};
+
+  ${media.lessThan("huge")`
+    font-size: 22px;
+  `}
+
+  ${media.lessThan("large")`
+    text-align: center;
+  `}
+
+
+  ${media.lessThan("medium")`
+    line-height: 22px;
+    margin-bottom: 20px;
+  `}
+`;
+
 export const ListContainer = styled.ul`
   padding: 0px 10px;
+  list-style: outside;
+  margin-left: 10px;
 `;
 
 export const ListItem = styled.li``;
