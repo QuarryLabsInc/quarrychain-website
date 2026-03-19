@@ -16,7 +16,7 @@ export const NavbarContainer = styled.div`
     },
   }) => neutral[0]};
   position: fixed;
-  z-index: 2;
+  z-index: 100;
 
   ${media.lessThan("medium")`
     position: static;

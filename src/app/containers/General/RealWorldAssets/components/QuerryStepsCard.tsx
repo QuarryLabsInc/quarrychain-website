@@ -1,5 +1,4 @@
 import React from 'react'
-import { GradientHeading } from '../RealWorldAssets.styles'
 
 interface QuerryStepsCards {
   title: string

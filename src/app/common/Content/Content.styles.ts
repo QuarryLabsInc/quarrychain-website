@@ -5,7 +5,6 @@ import media from "styled-media-query";
 
 export const Container = styled.section`
   width: 100%;
-  min-height: 70vh;
   padding-top: 80px;
   background-position: center;
   background-repeat: no-repeat;

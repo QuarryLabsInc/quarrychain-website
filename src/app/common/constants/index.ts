@@ -29,7 +29,7 @@ export enum assetPaths {
   HIGH_THROUGHTPUT = "assets/high_throughput.png",
   HIGH_AVAILABILITY = "assets/high_availability.png",
   HIGH_SCALABILITY = "assets/high_scalability.png",
-  QUERRY_SWAP_LOGO = "assets/querry_logo.png",
+  QUERRY_SWAP_LOGO = "assets/quarry_swap_logo.png",
   SELF_CUSTODIAL = "assets/self_custodial.png",
   INVESTOR_PROTECTION  = "assets/investor_querry.png",
   PROVIDER_TOKEN    = "assets/provider_token.png",
@@ -69,5 +69,14 @@ export enum assetPaths {
   ECOSYSTEM_CORNER_TOP = "/assets/cornor_top.png",
   ECOSYSTEM_CORNER_BOTTOM = "/assets/cornor_bottom.png",
   REAL_WORLD_SECTION_BG = "/assets/real_world_section_bg.png",
+  SWAP_BACKGROUND = "/assets/swap_bg.png",
+  SWAP_BACKGROUND2 = "/assets/swap_bg2.png",
+  SWAP_IMAGE1 = "/assets/swap_image1.png",
+  SWAP_IMAGE2 = "/assets/swap_image2.png",
+  SWAP_IMAGE3 = "/assets/swap_image3.png",
+  SWAP_IMAGE4 = "/assets/swap_image4.png",
+  ECOSYSTEM_BACKGROUND = "/assets/ecosystem_bg.png",
+  ECOSYSTEM_LOGO= "/assets/ecosystem_logo.png",
+  UTILITY_BACKGROUND= "/assets/utility_bg.png",
 }
 

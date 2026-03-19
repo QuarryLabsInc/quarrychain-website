@@ -1,28 +1,26 @@
-import React from "react";
-import TextCard from "./TextCard";
-import { GradientHeading } from "../QuarryCoin.styles";
-import { bennifitData } from "../data/QuarryCoin";
+import UtilityCard from './UtilityCard'
+import { bennifitData } from '../data/QuarryCoin'
 
 const BenifitTextContainer = () => {
-  const mappedBenifitsData = bennifitData.map((data) => (
-    <TextCard
-      key={data.title}
-      borderP={data.border_p}
-      title={data.title}
-      text={data.text}
+  const mappedBenifitsData = bennifitData.map((data, index) => (
+    <UtilityCard
+      key={index}
+      cardNo={index + 1}
+      cardTitle={data.title}
+      cardText={data.text}
     />
-  ));
+  ))
 
   return (
-    <div className="bg-gradient-to-r from-[#D9D9D9] to-[#1FC7D4] w-full py-8 px-4 sm:px-8 lg:px-12">
-      <div className="text-center mb-6">
-        <GradientHeading>Benefits</GradientHeading>
-      </div>
-      <div className="flex flex-col gap-6 md:flex-row md:flex-wrap md:justify-evenly lg:gap-10 items-center">
+    <div className='w-full py-8 px-4 sm:px-8 lg:px-12 lg:mt-[-200px] relative z-10'>
+      <h2 className='text-[#553499] text-[40px] font-bold text-center'>
+        Benefits
+      </h2>
+      <div className='flex flex-col md:flex-row md:flex-wrap md:justify-center gap-10 mt-16'>
         {mappedBenifitsData}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BenifitTextContainer;
+export default BenifitTextContainer
